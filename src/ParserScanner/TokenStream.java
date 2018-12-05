@@ -19,7 +19,7 @@ public class TokenStream {
 
 	private boolean isEof = false;
 
-	private char nextChar = ' '; // next character in input stream
+	private char nextChar = ' '; // next character in input steam
 
 	private BufferedReader input;
 
@@ -60,7 +60,7 @@ public class TokenStream {
 				while (!isEndOfLine(nextChar)) {
 					nextChar = readChar();
 				}
-
+				nextChar = readChar();
 			} else {
 
 				t.setValue("/");
